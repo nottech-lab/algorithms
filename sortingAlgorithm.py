@@ -12,7 +12,8 @@ import sys
 
 
 def bigSorting(unsorted):
-    
+    unsorted.sort(key = lambda x:(len(),x))
+    return unsorted
 
     if __name__ == '__main__':
         fptr = open(os.environ['OUTPUT_PATH'], 'w')
